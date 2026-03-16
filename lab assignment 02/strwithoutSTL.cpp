@@ -3,7 +3,9 @@ using namespace std;
 int main()
 {
     char s1[101], s2[101], copy[101], concat[1001];
+    cout << "Enter string s1 : ";
     cin >> s1;
+    cout << "Enter string s2 : ";
     cin >> s2;
     int len = 0;
 
