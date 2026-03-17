@@ -2,12 +2,13 @@
 using namespace std;
 int main()
 {
-    string text;
+    string text, s;
+    cout << "Enter String text : ";
     cin >> text;
-
-    string s;
+    cout << "Enter String S : ";
     cin >> s;
 
+    cout << "Enter the Kth Position : ";
     int k;
     cin >> k;
 
@@ -20,12 +21,7 @@ int main()
 
     int L = s.size();
 
-    for (int i = 0; i < L; i++)
-    {
-        ans += s[i];
-    }
-
-    for (int i = k - 1; i < text.size(); i++)
+    for (int i = k - 1 + L; i < text.size(); i++)
     {
         ans += text[i];
     }
